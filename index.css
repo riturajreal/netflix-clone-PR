@@ -7,6 +7,12 @@ html , body{
     font-family: Helvetica, Arial, sans-serif;
 }
 
+*{
+    box-sizing: border-box;
+}
+
+
+
 
 /* Header */
 header{
@@ -16,7 +22,10 @@ header{
 
 .container{
     width: 100%;
-    max-width: 1242px;
+    max-width: 1250px;
+    margin: 10px auto;
+    padding-inline:30px;
+    overflow: hidden;
 
 }
 
@@ -27,13 +36,6 @@ header{
 
 }
 
-.left-cont, .right-cont{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-}
-
 .main-nav{
     list-style: none;
     display: inline-flex;
@@ -41,28 +43,107 @@ header{
     /* display: none; */
 }
 
+.left-cont, .right-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
 .brand{
-    max-width: 100px;
+    max-width: 110px;
 }
 
 .nav-item{
     color: white;
     margin-right: 20px;
     color:#e5e5e5;
+    opacity: 0.8;
 }
 
-.nav-item.activ{
-    color:white
+.nav-item.active{
+    color:white;
+    opacity: 1;
+    font-weight: 600;
 }
 
 .right-cont svg{
     color:white;
 }
 
-.right-cont svg,img{
+.right-cont svg{
     margin-right: 22px;
+    cursor: pointer;
 }
 
 .right-cont img{
     max-width: 36px;
+}
+
+/* movies-section */
+
+
+.movie-section-heading{
+    color:white;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+
+}
+
+.movies-row{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    height: 180px;
+    flex-wrap: nowrap;
+    overflow-x:scroll;
+}
+
+.movies-row::-webkit-scrollbar {
+    display: none; /* for chrome*/
+}
+
+.movies-row {
+    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+  }
+
+
+.explore-nudge{
+    color:#54b9c5;
+    font-size: 12px;
+    display: none;
+}
+
+.movie-section-heading:hover .explore-nudge{
+    display: inline-block;
+    transition: display ease-in-out 1000ms;
+   
+}
+
+.movie-item{
+    width: 245px;
+    object-fit: contain;
+    margin-right: 20px;
+    border-radius: 5px;
+
+}
+
+.movie-item:hover{
+    transform: scale(1.1);
+    transition: transfrom ease-in 300ms;
+    border: 3px solid rgba(255, 255, 255, 0.446);
+}
+
+
+/* Responsive */
+@media (max-width:767px) {
+    .main-nav{
+        display: none;
+    }
 }
