@@ -28,7 +28,6 @@ li{
 /* Header */
 header{
     background-color: transparent;
-    border-radius: 20px;
     position: fixed;
     z-index: 100;
     left: 0;
