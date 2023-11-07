@@ -28,6 +28,7 @@ li{
 /* Header */
 header{
     background-color: transparent;
+    border-radius: 20px;
     position: fixed;
     z-index: 100;
     left: 0;
@@ -175,7 +176,7 @@ header.black-bg{
 
 .banner-section{
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size:cover;
     background-position: center;
     min-height: 98vh;
     padding-top: 80px;
@@ -287,7 +288,7 @@ header.black-bg{
     }
 
     .banner-section{
-        min-height: 58vh;
+        min-height: 60vh;
         background-size: cover;
 
     }
