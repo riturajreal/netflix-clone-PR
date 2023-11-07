@@ -175,7 +175,7 @@ header.black-bg{
 
 .banner-section{
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:contain;
     background-position: center;
     min-height: 98vh;
     padding-top: 80px;
