@@ -184,7 +184,7 @@ window.addEventListener("load", function () {
   window.addEventListener('scroll', function(){
         // header ui update
         const header = document.getElementById('header');
-        if(window.scrollY>5) header.classList.add('black-bg')
+        if(window.scrollY==0) header.classList.add('black-bg')
         else header.classList.remove('black-bg');
   })
 });
