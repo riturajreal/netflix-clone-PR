@@ -52,9 +52,9 @@ function fetchAndBuildMovieSection(fetchUrl, category){
 }
 
 function buildMoviesSection(list, categoryName){
-        console.log(list, categoryName);
+       console.log(list, categoryName);
 
-        const moviesCont = document.getElementById('movies-cont');
+       const moviesCont = document.getElementById('movies-cont');
 
        const moviesListHTML =  list.map(item=> {
             return `
