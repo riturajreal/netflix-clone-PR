@@ -167,7 +167,7 @@ function searchMovieTrailer(movieName){
         console.log(youtubeUrl);
 
         //open in new tab
-        //window.open(youtubeUrl, '_blank');
+        window.open(youtubeUrl, '_blank');
 
 
 
